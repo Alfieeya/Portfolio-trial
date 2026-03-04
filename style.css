@@ -1,0 +1,111 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+font-family:Arial;
+}
+
+/* Cover page */
+.cover{
+position:relative;
+height:100vh;
+width:100%;
+
+background-image:url("Portfolio (1).png");
+background-size:contain;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+/* Button style */
+.btn{
+position:absolute;
+
+background:#8ad0cf;
+border:2px solid black;
+
+padding:14px 40px;
+font-size:20px;
+
+text-decoration:none;
+color:black;
+
+border-radius:6px;
+}
+
+/* About button position */
+.about{
+top:51%;
+left:54%;
+}
+
+/* Works button position */
+.works{
+top:75%;
+left:48%;
+}
+
+/* Hover effect */
+.btn:hover{
+background:#6fbcbc;
+}
+
+.aboutpage{
+height:100vh;
+width:100%;
+
+background-image:url("ABOUT ME.png");
+background-size:contain;
+background-position:center;
+background-repeat:no-repeat;
+}
+/* Resume button position */
+.resume{
+position:absolute;
+
+top:48%;
+left:54%;
+
+background:#8ad0cf;
+border:2px solid black;
+
+padding:3px 9px;
+font-size:14px;
+
+text-decoration:none;
+color:black;
+
+border-radius:5px;
+}
+.workspage{
+height:100vh;
+width:100%;
+
+background-image:url("works.png");
+background-size:contain;
+background-position:center;
+background-repeat:no-repeat;
+}
+/* buttons on works page */
+
+.work2{
+position:absolute;
+top:43%;
+left:50%;
+
+padding:2px 6px;
+font-size:12px;
+}
+
+.work3{
+position:absolute;
+top:43%;
+left:82%;
+
+padding:2px 6px;
+font-size:12px;
+}
