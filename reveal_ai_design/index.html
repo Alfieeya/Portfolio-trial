@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal.AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <style>
+    /* LOAD MOONTIME FONT */
+    @font-face {
+      font-family: "Moontime";
+      src: url("/static/MoonTime-Regular.otf") format("opentype");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: "Moontime", cursive;
+      background-color: #1e073c;
+    }
+
+    /* BACKGROUND */
+    .landing {
+      height: 100vh;
+      width: 100%;
+      background: url("Reveal.AI coverpage.png") no-repeat center center / cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .center-content {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+      z-index: 2;
+      
+    }
+
+    .action-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+#cancelVideoBtn {
+  background: #7f1d1d;
+  color: white;
+}
+
+#uploadNewBtn {
+  background: #1e40af;
+  color: white;
+}
+
+.action-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+    /* TEXT */
+    .title {
+      font-family: 'Allura', cursive;
+      font-size: 64px;        /* Increase if needed */
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      transform-origin: center center;
+      transition: transform 1.6s ease;
+      text-shadow: 0 0 20px rgba(255,255,255,0.35);
+      margin-top: 1.8cm;
+    }
+
+    .title:not(.expand):hover {
+      transform: scale(1.15);
+    }
+
+    .expand {
+      transform: scale(2);
+    }
+
+    .tagline {
+      margin-top: 14px;
+      font-size: 18px;                 /* slightly smaller */
+      font-family: Arial, sans-serif;  /* clean readable font */
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* WHITE TRANSITION OVERLAY */
+    .white-screen {
+      position: absolute;
+      inset: 0;
+      background: #1e073c;
+      opacity: 0;
+      z-index: 5;
+      transition: opacity 0.6s ease;
+      pointer-events: none;
+    }
+
+    .white-screen.active {
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 64px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="landing">
+    <div class="center-content">
+      <span id="revealText" class="title">Reveal.AI</span>
+      <div class="tagline">
+        Wanna know reality?
+      </div>
+    </div>
+      
+    <div id="whiteScreen" class="white-screen"></div>
+  </div>
+
+<script>
+  const text = document.getElementById("revealText");
+  const whiteScreen = document.getElementById("whiteScreen");
+
+  text.addEventListener("click", () => {
+    // disable interaction
+    text.style.pointerEvents = "none";
+
+    // expand text
+    text.classList.add("expand");
+
+    // show white screen AFTER expansion
+    setTimeout(() => {
+      whiteScreen.classList.add("active");
+    }, 1300);
+
+    // navigate after white screen
+    setTimeout(() => {
+      window.location.href = "app.html";
+    }, 1900);
+  });
+</script>
+</body>
+</html>
