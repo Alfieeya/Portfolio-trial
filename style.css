@@ -13,7 +13,7 @@ font-family:Arial;
 .cover{
 position:relative;
 height:100vh;
-width:100vw;
+width:100%;
 
 background-image:url("Portfolio (1).png");
 background-size:contain;
@@ -24,14 +24,16 @@ background-repeat:no-repeat;
 /* Button style */
 .btn{
 position:absolute;
+
 background:#8ad0cf;
 border:2px solid black;
 
-padding:8px 18px;
-font-size:14px;
+padding:14px 40px;
+font-size:20px;
 
 text-decoration:none;
 color:black;
+
 border-radius:6px;
 }
 
@@ -43,8 +45,8 @@ left:54%;
 
 /* Works button position */
 .works{
-top:72%;
-left:74%;
+top:75%;
+left:48%;
 }
 
 /* Hover effect */
@@ -90,39 +92,20 @@ background-repeat:no-repeat;
 }
 /* buttons on works page */
 
-/* buttons on works page */
-
 .work2{
 position:absolute;
-top:40%;
-left:52%;
+top:43%;
+left:50%;
 
-padding:2px 8px;
+padding:2px 6px;
 font-size:12px;
 }
 
 .work3{
 position:absolute;
-top:40%;
-left:78%;
+top:43%;
+left:82%;
 
-padding:2px 8px;
+padding:2px 6px;
 font-size:12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
