@@ -44,7 +44,7 @@ left:54%;
 /* Works button position */
 .works{
 top:74%;
-left:74%;
+left:50%;
 }
 
 /* Hover effect */
@@ -104,11 +104,12 @@ font-size:12px;
 .work3{
 position:absolute;
 top:40%;
-left:76%;
+left:78%;
 
 padding:2px 8px;
 font-size:12px;
 }
+
 
 
 
