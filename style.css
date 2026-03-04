@@ -24,16 +24,14 @@ background-repeat:no-repeat;
 /* Button style */
 .btn{
 position:absolute;
-
 background:#8ad0cf;
 border:2px solid black;
 
-padding:14px 40px;
-font-size:20px;
+padding:8px 18px;
+font-size:14px;
 
 text-decoration:none;
 color:black;
-
 border-radius:6px;
 }
 
@@ -89,10 +87,12 @@ background-repeat:no-repeat;
 }
 /* buttons on works page */
 
+/* buttons on works page */
+
 .work2{
 position:absolute;
 top:40%;
-left:53%;
+left:52%;
 
 padding:2px 8px;
 font-size:12px;
@@ -106,6 +106,7 @@ left:76%;
 padding:2px 8px;
 font-size:12px;
 }
+
 
 
 
